@@ -11,7 +11,7 @@ MODEL_PATH = "Models/amharic_cnn.keras"
 CLASS_PATH = "Models/class_names.npy"
 DATA_DIR = "data"
 
-model = tf.keras.models.load_model(MODEL_PATH)
+model = tf.keras.models.load_model(MODEL_PATH, compile=False)
 class_names = np.load(CLASS_PATH, allow_pickle=True)
 
 # --------------------------
