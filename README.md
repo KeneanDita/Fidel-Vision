@@ -7,7 +7,12 @@ Author : [Kenean Dita](https://github.com/KeneanDita)
 
 ## Sample outputs
 
+- Using the canvas inside the webapp
+
 ![Sample](assets/1.png)
+
+- By uploading an image to the webapp
+
 ![Sample](assets/2.png)
 
 ## Features
