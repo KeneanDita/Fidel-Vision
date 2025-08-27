@@ -5,6 +5,11 @@ It uses a **CNN model built with TensorFlow/Keras**, trained on a custom dataset
 
 Author : [Kenean Dita](https://github.com/KeneanDita)
 
+## Sample outputs
+
+![Sample](assets/1.png)
+![Sample](assets/2.png)
+
 ## Features
 
 * **CNN model** trained on 32×32 grayscale images of handwritten fidel.
