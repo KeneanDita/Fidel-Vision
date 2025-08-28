@@ -98,22 +98,22 @@ with tab2:
     st.write("Draw inside the box below 👇")
 
     canvas = st_canvas(
-        fill_color="white",
+        fill_color="rgba(255, 255, 255, 0)",  # transparent background for strokes
         stroke_width=10,
         stroke_color="black",
-        background_color="white",
+        background_color="#EEE",  # light gray background so it's visible
         width=200,
         height=200,
         drawing_mode="freedraw",
-        key="canvas",
+        key="canvas_draw",  # unique key
     )
 
     if canvas.image_data is not None:
-        img = Image.fromarray(
-            (255 - canvas.image_data[:, :, 0]).astype(np.uint8)
-        )  # invert so black ink
+        # Convert to grayscale & invert (black ink on white)
+        img = Image.fromarray((255 - canvas.image_data[:, :, 0]).astype(np.uint8))
         img_resized = img.resize((img_width, img_height))
-        st.image(img_resized, caption="Drawn Character", width=200)
+
+        st.image(img_resized, caption="🖌️ Drawn Character", width=150)
 
         img_array = np.array(img_resized) / 255.0
         img_array = img_array.reshape(1, img_height, img_width, 1)
