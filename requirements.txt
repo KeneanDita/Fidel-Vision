@@ -7,3 +7,4 @@ tensorflow
 streamlit
 streamlit-drawable-canvas
 Pillow
+XGBoost
