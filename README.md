@@ -1,9 +1,14 @@
 # Amharic Handwritten Character Recognition
 
-This project is a **Deep Learning + Streamlit web app** for recognizing handwritten **Amharic fidel characters** (34 root groups × 7 orders).
+A **Deep Learning + Streamlit web app** for recognizing handwritten **Amharic fidel characters** (34 root groups × 7 orders).
 It uses a **CNN model built with TensorFlow/Keras**, trained on a custom dataset of handwritten Amharic letters, and serves predictions through a Streamlit interface.
 
 Author : [Kenean Dita](https://github.com/KeneanDita)
+
+### Acknowledgements
+
+* Dataset: [Custom handwritten Amharic letters.](https://www.kaggle.com/datasets/shahabdulmazid/handwritten)
+* Frameworks: [TensorFlow](https://www.tensorflow.org/), [Streamlit](https://streamlit.io/).
 
 ## Sample outputs
 
@@ -96,8 +101,3 @@ I used the **Amharic syllabary table (34 roots × 7 orders)** to map model outpu
 ...
 ፐ ፑ ፒ ፓ ፔ ፕ ፖ
 ```
-
-### Acknowledgements
-
-* Dataset: [Custom handwritten Amharic letters.](https://www.kaggle.com/datasets/shahabdulmazid/handwritten)
-* Frameworks: [TensorFlow](https://www.tensorflow.org/), [Streamlit](https://streamlit.io/).
