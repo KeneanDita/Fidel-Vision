@@ -70,7 +70,7 @@ jupyter notebook train.ipynb
 ### Run the Streamlit app
 
 ```bash
-streamlit run app.py
+streamlit run .\UI.py
 ```
 
 * Upload a handwritten Amharic character image or draw using the second tab as an option.
